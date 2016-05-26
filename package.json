@@ -1,0 +1,12 @@
+{
+  "name": "Portfolio",
+  "version": "0.0.1",
+  "description": "This is my new page",
+  "dependencies": {
+    "express": "*"
+  },
+  "engine": "node >=0.6.x",
+  "devDependencies": {
+    "angular-translate": "^2.11.0"
+  }
+}

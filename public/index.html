@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app ="myPage">
+    <head>
+        <title>Tomasz Diaków</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="lib/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="static/styles/header.css" />
+        <script type='text/javascript' src="lib/angular.min.js" charset="UTF-8"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+        <script src="lib/angular_translate/angular-translate.min.js"></script>
+        <script type='text/javascript' src="app.js" charset="UTF-8"></script>
+        <script type='text/javascript' src="app/main/main.controller.js" charset="UTF-8"></script>
+        <script type='text/javascript' src="app/offer/offer.controller.js" charset="UTF-8"></script>
+    </head>
+    <body ng-controller="mainCtr">
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/">Tomasz Diaków</a>
+                    </div>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li ng-class="{ active: isActive('/offer')}"><a href="#offer" translate="OFFER"></a></li>
+                        <li ng-class="{ active: isActive('/projects')}"><a href="#projects" translate="PROJECTS"></a></li>
+                        <li ng-class="{ active: isActive('/about')}"><a href="#about" translate="ABOUT"></a></li>
+                        <li ng-class="{ active: isActive('/experience')}"><a href="#experience" translate="EXPERIENCE"></a></li>
+                        <li ng-class="{ active: isActive('/contact')}"><a href="#contact" translate="CONTACT"></a></li>
+                        <li class="last" ng-class="{ active: isActive('/new-offer')}"><a href="#new-offer"></i>Zatrudnij</a></li>
+                        <li><img src="static/img/pl.png" alt="pl" ng-click="changeLanguage('pl')" /> </li>
+                        <li><img src="static/img/en.png" alt="en" ng-click="changeLanguage('en')" /> </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="container" id="main">
+            <div ng-view class="view"></div>
+        </div>
+    </body>
+</html>
+
+ 
+
