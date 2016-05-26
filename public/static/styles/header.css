@@ -2,8 +2,10 @@
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus{
     background-color: transparent;
-    border-bottom: 3px solid #04B404;
+    font-weight: bold;
+    border-bottom: 3px solid rgb(122,18,128);
 }
+
 
 .navbar-default{
     background-color: transparent;
@@ -14,11 +16,12 @@
 
 
 header, .trans{
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-    -o-animation: fadein 2s; /* Opera < 12.1 */
-    animation: fadein 2s;
+    -webkit-animation: marginTo 1s;
+    -moz-animation: marginTo 1s;
+    -ms-animation: marginTo 1s;
+    -o-animation: marginTo 1s;
+    animation: marginTo 1s;
+    animation-timing-function: linear;
 }
 
 header nav li img{
@@ -27,10 +30,19 @@ header nav li img{
     cursor: pointer;
 }
 
+header h1 a.navbar-brand{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+header h1{
+    margin: 0;
+}
+
 
 header li.last{
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 header nav ul li{
@@ -48,8 +60,8 @@ header nav ul li a{
     -ms-animation: fadein 2s forwards;
     -o-animation: fadein 2s forwards;
     animation: fadein 2s forwards;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
 }
 
 @keyframes fadein {
@@ -75,4 +87,30 @@ header nav ul li a{
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+
+@keyframes marginTo {
+    from { margin-top: -100px; }
+    to   { margin-top: 0; }
+}
+
+@-moz-keyframes marginTo {
+    from { margin-top: -100px; }
+    to   { margin-top: 0; }
+}
+
+@-webkit-keyframes marginTo {
+    from { margin-top: -100px; }
+    to   { margin-top: 0; }
+}
+
+@-ms-keyframes marginTo {
+    from { margin-top: -100px; }
+    to   { margin-top: 0; }
+}
+
+@-o-keyframes marginTo {
+    from { margin-top: -100px; }
+    to   { margin-top: 0; }
 }

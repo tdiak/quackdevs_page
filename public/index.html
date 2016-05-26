@@ -5,21 +5,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="lib/css/bootstrap.min.css" />
         <link rel="stylesheet" href="static/styles/header.css" />
+        <link rel="stylesheet" href="static/styles/footer.css" />
+        <link rel="stylesheet" href="static/styles/experience.css" />
+        <link rel="stylesheet" href="static/styles/projects.css" />
         <script type='text/javascript' src="lib/angular.min.js" charset="UTF-8"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
         <script src="lib/angular_translate/angular-translate.min.js"></script>
         <script type='text/javascript' src="app.js" charset="UTF-8"></script>
+        <script type='text/javascript' src="config/routing.js" charset="UTF-8"></script>
+        <script type='text/javascript' src="config/translations.js" charset="UTF-8"></script>
         <script type='text/javascript' src="app/main/main.controller.js" charset="UTF-8"></script>
         <script type='text/javascript' src="app/offer/offer.controller.js" charset="UTF-8"></script>
+        <script type='text/javascript' src="app/about/about.controller.js" charset="UTF-8"></script>
+        <script type='text/javascript' src="app/contact/contact.controller.js" charset="UTF-8"></script>
+        <script type='text/javascript' src="app/experience/experience.controller.js" charset="UTF-8"></script>
+        <script type='text/javascript' src="app/projects/projects.controller.js" charset="UTF-8"></script>
     </head>
     <body ng-controller="mainCtr">
         <header>
             <nav class="navbar navbar-default">
                 <div class="container">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="/">Tomasz Diaków</a>
+                        <h1><a class="navbar-brand" href="/">Tomasz Diaków</a></h1>
                     </div>
-
                     <ul class="nav navbar-nav navbar-right">
                         <li ng-class="{ active: isActive('/offer')}"><a href="#offer" translate="OFFER"></a></li>
                         <li ng-class="{ active: isActive('/projects')}"><a href="#projects" translate="PROJECTS"></a></li>
@@ -33,9 +41,14 @@
                 </div>
             </nav>
         </header>
-        <div class="container" id="main">
+
+        <div class="" id="main">
             <div ng-view class="view"></div>
         </div>
+
+        <footer>
+
+        </footer>
     </body>
 </html>
 

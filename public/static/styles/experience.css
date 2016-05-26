@@ -1,0 +1,72 @@
+.experience{
+    margin-top: 30px;
+}
+
+.experience ul li{
+    width: 100%;
+    padding: 40px 0;
+    position: relative;
+}
+
+.experience ul{
+    -webkit-padding-start: 0;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.experience ul h2{
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.experience ul h3{
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.experience ul a{
+    padding: 10px 20px;
+    border: 1px solid white;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+    width: 200px;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none!important;
+}
+
+.experience ul li.softserver{
+    background-color: #171b65;
+}
+
+.experience ul li.stermedia{
+    background-color: #018bd3;
+}
+
+.experience ul li.chop-chop{
+    background-color: #ffcc00;
+}
+
+.experience ul li.lets-meet{
+    background-color: #222;
+}
+
+.experience ul li.infotel{
+    background-color: rgb(255, 165, 0);
+}
+
+.experience ul li.fiema{
+    background-color: #fc1d24;
+}
+
+.experience ul li.softserver:hover{
+    opacity: 1;
+}
