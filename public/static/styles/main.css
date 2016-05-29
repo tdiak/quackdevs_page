@@ -1,0 +1,57 @@
+.main h2.header{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    position: relative;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    line-height: 55px;
+}
+
+.main h2.header:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #15A0CF;
+    left: 50%;
+    margin-left: -50%;
+}
+
+.main h2.header span{
+    color: #15A0CF;
+}
+
+.main a.block{
+    display: block;
+    margin-top: 50px;
+    padding: 100px 20px;
+    text-align: center;
+    border: 3px solid #15A0CF;
+}
+
+.main a.block{
+    font-size: 40px;
+    font-weight: bold;
+    color: #15A0CF;
+    text-transform: uppercase;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+.main p.or{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 150px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main a.block:hover{
+    background-color: #15A0CF;
+    color: white;
+}

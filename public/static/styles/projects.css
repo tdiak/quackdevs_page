@@ -1,14 +1,37 @@
-section.projects{
-    smargin-top: 30px;
+section.projects h2.header{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    position: relative;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    line-height: 55px
+}
+
+section.projects h2.header:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+    height: 2px;
+    background-color: #15A0CF;
+    left: 50%;
+    margin-left: -30%;
 }
 
 
 section.projects ul{
     -webkit-padding-start: 0;
+    margin-top: 30px;
 }
 
 section.projects ul li{
     height: 300px;
+    border: 5px solid white;
+    /*border: 5px solid #777;*/
 }
 
 section.projects ul li.lets-meet{
@@ -57,7 +80,7 @@ section.projects ul li.barmani{
 }
 
 section.projects li div.desc{
-    background-color: rgb(122,18,128);
+    background-color: #15A0CF;
     height: 100%;
 }
 
@@ -67,18 +90,19 @@ section.projects li{
 }
 
 section.projects li div.desc{
-    height: 0;
-    -webkit-transition: height 1s;
-    transition: height 1s;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
     overflow: hidden;
 }
 
 section.projects li:hover div.desc{
-    height: 100%;
+    opacity: 1;
 }
 
 
-section.projects h2{
+section.projects li h2{
     color: white;
     font-size: 32px;
     font-weight: bold;

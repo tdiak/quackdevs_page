@@ -1,6 +1,39 @@
 footer{
-    background-color: rgb(122,18,128);
+    background-color: #15A0CF;
     width: 100%;
     padding: 30px;
     margin-top: 30px;
+    -webkit-animation: marginTo 1s;
+    -moz-animation: marginTo 1s;
+    -ms-animation: marginTo 1s;
+    -o-animation: marginTo 1s;
+    animation: marginTo 1s;
+    animation-timing-function: linear;
+}
+
+
+
+@keyframes marginTo {
+    from { margin-top: -100px; }
+    to   { margin-top: 0; }
+}
+
+@-moz-keyframes marginTo {
+    from { margin-top: -100px; }
+    to   { margin-top: 0; }
+}
+
+@-webkit-keyframes marginTo {
+    from { margin-top: -100px; }
+    to   { margin-top: 0; }
+}
+
+@-ms-keyframes marginTo {
+    from { margin-top: -100px; }
+    to   { margin-top: 0; }
+}
+
+@-o-keyframes marginTo {
+    from { margin-top: -100px; }
+    to   { margin-top: 0; }
 }

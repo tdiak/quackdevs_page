@@ -1,5 +1,25 @@
-.experience{
-    margin-top: 30px;
+.experience h2.header{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    position: relative;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    line-height: 55px
+}
+
+.experience h2.header:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 2px;
+    background-color: #15A0CF;
+    left: 50%;
+    margin-left: -40%;
 }
 
 .experience ul li{

@@ -5,7 +5,8 @@ app.config(function($translateProvider) {
         PROJECTS: 'Projects',
         ABOUT: 'About me',
         EXPERIENCE: 'Experience',
-        CONTACT: 'Contact'
+        CONTACT: 'Contact',
+        SHOW: 'Show'
     });
 
     $translateProvider.translations('pl', {
@@ -13,7 +14,8 @@ app.config(function($translateProvider) {
         PROJECTS: 'Realizacje',
         ABOUT: 'O mnie',
         EXPERIENCE: 'Doświadczenie',
-        CONTACT: 'Kontakt'
+        CONTACT: 'Kontakt',
+        SHOW: 'Pokaż'
     });
 
     $translateProvider.preferredLanguage('en');

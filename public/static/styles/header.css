@@ -3,7 +3,7 @@
 .navbar-default .navbar-nav>.active>a:focus{
     background-color: transparent;
     font-weight: bold;
-    border-bottom: 3px solid rgb(122,18,128);
+    border-bottom: 3px solid #15A0CF;
 }
 
 
