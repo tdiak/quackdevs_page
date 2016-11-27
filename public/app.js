@@ -2,7 +2,8 @@
 
 var app = angular.module('myPage', [
     'ngRoute',
-    'pascalprecht.translate'
+    'pascalprecht.translate',
+    'ngMaterial'
 ]).run(function () {
 
 

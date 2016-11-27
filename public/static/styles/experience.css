@@ -28,6 +28,10 @@
     position: relative;
 }
 
+footer{
+    margin-top: 0;
+}
+
 .experience ul{
     -webkit-padding-start: 0;
     color: white;
@@ -57,6 +61,7 @@
 
 ul{
     list-style-type: none;
+    margin-bottom: 0;
 }
 
 a{

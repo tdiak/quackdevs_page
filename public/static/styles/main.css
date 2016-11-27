@@ -10,6 +10,10 @@
     line-height: 55px;
 }
 
+body{
+    background-color: snow;
+}
+
 .main h2.header:after{
     content: '';
     display: block;
@@ -54,4 +58,8 @@
 .main a.block:hover{
     background-color: #15A0CF;
     color: white;
+}
+
+section.contact, section.about{
+    margin-bottom: 40px;
 }

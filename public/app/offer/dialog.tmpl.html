@@ -1,0 +1,20 @@
+<md-dialog aria-label="{{ technology.name }}">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>{{ technology.name }}</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    <span class="glyphicon glyphicon-off"></span>
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+                <h2>{{ technology.short_description }}</h2>
+                <p ng-repeat="p in technology.description"><span class="glyphicon glyphicon-ok"></span> {{ p }}</p>
+            </div>
+        </md-dialog-content>
+    </form>
+</md-dialog>

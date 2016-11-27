@@ -4,11 +4,28 @@
         <div class="row">
             <div class="col-md-12">
                 <form>
-                    <input type="text" placeholder="Imię i Nazwisko" />
-                    <input type="text" placeholder="Adres email" />
-                    <input type="text" placeholder="Nr telefonu" />
-                    <textarea placeholder="Treść"></textarea>
-                    <button>Wyślij</button>
+                    <md-input-container>
+                        <label translate="Title"></label>
+                        <input ng-model="message.title">
+                    </md-input-container>
+
+                    <md-input-container>
+                        <label translate="Email address"></label>
+                        <input ng-model="message.email">
+                    </md-input-container>
+
+                    <md-input-container>
+                        <label translate="Phone number"></label>
+                        <input ng-model="message.phone">
+                    </md-input-container>
+
+                    <md-input-container>
+                        <label translate="Message"></label>
+                        <textarea ng-model="message.message"></textarea>
+                    </md-input-container>
+                    <button class="md-raised md-primary md-button md-ink-ripple" type="button">
+                        <span class="ng-scope" translate="Send"></span>
+                    </button>
                 </form>
             </div>
         </div>

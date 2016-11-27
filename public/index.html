@@ -3,37 +3,49 @@
     <head>
         <title>Tomasz Diaków</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
         <link rel="stylesheet" href="lib/css/bootstrap.min.css" />
         <link rel="stylesheet" href="static/styles/header.css" />
         <link rel="stylesheet" href="static/styles/footer.css" />
         <link rel="stylesheet" href="static/styles/experience.css" />
-        <link rel="stylesheet" href="static/styles/projects.css" />
+        <link rel="stylesheet" href="static/styles/downloads.css" />
         <link rel="stylesheet" href="static/styles/contact.css" />
         <link rel="stylesheet" href="static/styles/about.css" />
+        <link rel="stylesheet" href="static/styles/offer.css" />
         <link rel="stylesheet" href="static/styles/main.css" />
-        <script type='text/javascript' src="lib/angular.min.js" charset="UTF-8"></script>
+        <link rel="stylesheet" href="static/styles/new_offer.css" />
+
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
         <script src="lib/angular_translate/angular-translate.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
         <script type='text/javascript' src="app.js" charset="UTF-8"></script>
         <script type='text/javascript' src="config/routing.js" charset="UTF-8"></script>
         <script type='text/javascript' src="config/translations.js" charset="UTF-8"></script>
+        <script type='text/javascript' src="config/theme.js" charset="UTF-8"></script>
         <script type='text/javascript' src="app/main/main.controller.js" charset="UTF-8"></script>
         <script type='text/javascript' src="app/offer/offer.controller.js" charset="UTF-8"></script>
         <script type='text/javascript' src="app/about/about.controller.js" charset="UTF-8"></script>
         <script type='text/javascript' src="app/contact/contact.controller.js" charset="UTF-8"></script>
         <script type='text/javascript' src="app/experience/experience.controller.js" charset="UTF-8"></script>
-        <script type='text/javascript' src="app/projects/projects.controller.js" charset="UTF-8"></script>
+        <script type='text/javascript' src="app/downloads/downloads.controller.js" charset="UTF-8"></script>
+        <script type='text/javascript' src="app/new_offer/new_offer.controller.js" charset="UTF-8"></script>
     </head>
     <body ng-controller="mainCtr">
         <header>
             <nav class="navbar navbar-default">
                 <div class="container">
                     <div class="navbar-header">
-                        <h1><a class="navbar-brand" href="/">Tomasz Diaków</a></h1>
+                        <h1><a class="navbar-brand" href="/#/">Tomasz Diaków</a></h1>
                     </div>
                     <ul class="nav navbar-nav navbar-right clearfix">
                         <li ng-class="{ active: isActive('/offer')}"><a href="#offer" translate="OFFER"></a></li>
-                        <li ng-class="{ active: isActive('/projects')}"><a href="#projects" translate="PROJECTS"></a></li>
+                        <li ng-class="{ active: isActive('/downloads')}"><a href="#downloads" translate="DOWNLOADS"></a></li>
                         <li ng-class="{ active: isActive('/about')}"><a href="#about" translate="ABOUT"></a></li>
                         <li ng-class="{ active: isActive('/experience')}"><a href="#experience" translate="EXPERIENCE"></a></li>
                         <li ng-class="{ active: isActive('/contact')}"><a href="#contact" translate="CONTACT"></a></li>
@@ -49,9 +61,9 @@
             <div ng-view class="view"></div>
         </div>
 
-        <footer>
+        <!--<footer>-->
 
-        </footer>
+        <!--</footer>-->
     </body>
 </html>
 

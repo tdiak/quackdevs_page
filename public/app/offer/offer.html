@@ -1,1 +1,19 @@
-{{ message }}
+<div class="container">
+    <section class="offer">
+        <h2 class="header" translate="Offer"></h2>
+        <md-tabs md-dynamic-height md-border-bottom>
+
+            <md-tab ng-repeat="skill in skills" label="{{ skill.name }}" md-ink-ripple="#FF0000">
+                <md-content class="">
+                    <div class="list-group">
+                        <a ng-repeat="technology in skill.technologies" ng-click="showAdvanced($event, technology)" class="list-group-item">
+                            <h4 class="list-group-item-heading">{{ technology.name }}</h4>
+                            <p class="list-group-item-text">{{ technology.short_description }}</p>
+                        </a>
+                    </div>
+                </md-content>
+            </md-tab>
+
+        </md-tabs>
+    </section>
+</div>

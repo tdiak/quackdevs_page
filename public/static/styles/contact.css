@@ -22,47 +22,25 @@
     margin-left: -25%;
 }
 
-.contact form input, .contact form textarea{
-    border: 0;
-    outline: 0;
-    background: transparent;
-    border-bottom: 2px solid #15A0CF;
-    border-right: 2px solid #15A0CF;
-    color: #15A0CF;
-    font-size: 16px;
+
+md-input-container{
+    display: block;
     width: 50%;
     margin: 0 auto;
-    display: block;
-    margin-top: 50px;
-    -webkit-transition: padding 0.5s;
-    transition: padding 0.5s;
-    resize: none;
+    margin-top: 30px;
 }
 
-.contact form textarea{
-    min-height: 200px;
-}
-
-.contact form button{
-    background: transparent;
-    border: 2px solid #15A0CF;
+md-input-container:not(.md-input-invalid).md-input-focused label,
+md-input-container:not(.md-input-invalid).md-input-focused .md-input{
     color: #15A0CF;
-    font-size: 16px;
-    width: 50%;
-    margin: 0 auto;
-    display: block;
-    margin-top: 50px;
-    padding: 30px;
-    font-weight: bold;
-    -webkit-transition: background-color 1s;
-    transition: background-color 1s;
+    border-color: #15A0CF;
 }
 
-.contact form button:hover{
+button.md-button, .md-button.md-primary.md-raised,
+.md-button.md-primary.md-raised:not([disabled]):hover{
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    display: block;
     background-color: #15A0CF;
-    color: white;
-}
-
-.contact form input:focus, .contact form textarea:focus{
-    padding: 20px 10px;
 }

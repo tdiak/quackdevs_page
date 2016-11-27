@@ -8,9 +8,9 @@ app.config(function ($routeProvider) {
             templateUrl: '../app/offer/offer.html',
             controller: 'offerCtr'
         })
-        .when('/projects', {
-            templateUrl: '../app/projects/projects.html',
-            controller: 'projectsCtr'
+        .when('/downloads', {
+            templateUrl: '../app/downloads/downloads.html',
+            controller: 'downloadsCtr'
         })
         .when('/about', {
             templateUrl: '../app/about/about.html',
@@ -23,5 +23,9 @@ app.config(function ($routeProvider) {
         .when('/experience', {
             templateUrl: '../app/experience/experience.html',
             controller: 'experienceCtr'
+        })
+        .when('/new-offer', {
+            templateUrl: '../app/new_offer/new_offer.html',
+            controller: 'newOfferCtr'
         });
 });

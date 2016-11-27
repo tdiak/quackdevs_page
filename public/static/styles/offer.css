@@ -1,0 +1,55 @@
+section.offer h2{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    position: relative;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    line-height: 55px
+}
+
+section.offer h2:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 20%;
+    height: 2px;
+    background-color: #15A0CF;
+    left: 50%;
+    margin-left: -10%;
+}
+
+md-tabs .md-tab.md-active{
+    color: #15A0CF;
+    border-bottom: #15A0CF;
+}
+
+md-tabs md-ink-bar, md-tabs md-ink-bar{
+    background: #15A0CF;
+}
+md-tabs{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+md-content{
+    background-color: snow;
+}
+
+md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolbar){
+    background-color: #15A0CF;
+}
+
+md-dialog h2{
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+md-dialog p span{
+    color: #15A0CF;
+    padding-right: 5px;
+}
